@@ -1,4 +1,3 @@
-# TODO
+# Avida Data Conversion Tools
 
-- [ ] Script documentation
-- [ ] Move avida data conversion into a callable function.
+Avida is...
