@@ -51,7 +51,6 @@ def main():
         # Extract header information.
         header = None
         for line in fp:
-            print(line[:7])
             if line[:7] == "#format": 
                 header = line.replace("#format", "").strip().split(" ")
                 break
@@ -60,7 +59,6 @@ def main():
         
         # Collect data from Avida file in format that will be easy to convert to
         # pandas dataframe object.
-        cnt = 0
         avida_data = {field:[] for field in header}
         for line in fp:
             line = line.strip()
@@ -77,11 +75,9 @@ def main():
                 if header[i] in avida_set_fields: value = value.split(avida_set_delim)
                 # Go ahead and add the value to the appropriate field.
                 avida_data[header[i]].append(value)
-            if cnt > 5: break
-            cnt += 1
 
     # Clean up avida data to play with standard.
-    avida_data["ancestor_list"] = [list(map(int, anc_lst)) for anc_lst in avida_data.pop("parents")]
+    avida_data["ancestor_list"] = [list(map(int, [-1 if anc == "(none)" else anc for anc in anc_lst])) for anc_lst in avida_data.pop("parents")]
     avida_data["origin_time"] = copy.deepcopy(avida_data["update_born"])
     avida_data["id"] = list(map(int, avida_data["id"]))
            
@@ -93,13 +89,12 @@ def main():
     if minimal_out:
         # What fields should we delete (if we're doing minimal output)?
         min_fields = ["id", "ancestor_list", "origin_time"]
-        del_fields = [field for field in avida_data if ((not field in min_fields) and minimal_out)]
+        del_fields = [field for field in avida_data if not field in min_fields]
         df.drop(del_fields, axis=1, inplace=True)
     
     # Adjust the header so that standard fields are up front.
     stds_hd = ["id", "ancestor_list", "origin_time"]
-    new_header = stds_hd + [field for field in avida_data if (not field in stds_hd) or (field in del_fields)]
-
+    new_header = stds_hd + [field for field in avida_data if (not field in stds_hd) and (not field in del_fields)]
     # Write output in requested format.
     if (out_format == "csv"):
         with open(out_fp, "w"):
