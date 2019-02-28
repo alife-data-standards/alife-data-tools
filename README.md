@@ -26,7 +26,7 @@ This repository links to tools, analyses, visualizations, _et cetera_ that suppo
 #### Tools - Web
 
 - [**Phylogeny visualizer**](https://emilydolson.github.io/lineage_viz_tool/standards_viz.html)
-  - Description: Upload a standards-compliant phylogeny file and this website will draw a tree based on it. If you have additional fields in your data, you can color the nodes based on them.
+  - Description: Upload a standards-compliant csv formatted phylogeny file and this website will draw a tree based on it. If you have additional fields in your data, you can color the nodes based on them.
 
 ### Converters
 
