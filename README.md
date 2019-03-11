@@ -41,3 +41,10 @@ inadequate readmes!
 - [Avida](https://github.com/alife-data-standards/converters-avida)
 - [Modular Agent-based Evolver (MABE)](https://github.com/alife-data-standards/converters-mabe)
 - [Visual Inspector for NeuroEvolution (VINE)](https://github.com/alife-data-standards/converters-vine)
+
+
+### Devlopment Utilities
+
+Development utilities are provided for those who wish to create new tools that take advantage of the ALife data standards. These utilities provide functionality such as loading/saving standard-compliant data using various file formats, callable metric and verification functions, _et cetera_. 
+
+ - [Python](https://github.com/alife-data-standards/alife-std-dev-python)
