@@ -40,3 +40,4 @@ inadequate readmes!
 
 - [Avida](https://github.com/alife-data-standards/converters-avida)
 - [Modular Agent-based Evolver (MABE)](https://github.com/alife-data-standards/converters-mabe)
+- [Visual Inspector for NeuroEvolution (VINE)](https://github.com/alife-data-standards/converters-vine)
