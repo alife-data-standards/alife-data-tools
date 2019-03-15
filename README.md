@@ -6,31 +6,38 @@
 <!-- TOC -->
 
 - [Overview](#overview)
-  - [Tools](#tools)
-    - [Tools - Phylogenies](#tools---phylogenies)
-    - [Tools - Web](#tools---web)
-  - [Converters](#converters)
+- [Software Resource List](#software-resource-list)
+  - [Developer Utilities/Libraries](#developer-utilitieslibraries)
+    - [Python](#python)
+  - [Data Converters](#data-converters)
+  - [End-user Tools](#end-user-tools)
+    - [Data processing](#data-processing)
+    - [Visualizers](#visualizers)
 
 <!-- /TOC -->
 
 ## Overview
 
-This repository links to tools, analyses, visualizations, _et cetera_ that support [ALife community data standards](https://alife-data-standards.github.io/alife-data-standards/).
+This repository is a curated list of software resources related to the [ALife community data standards](https://alife-data-standards.github.io/alife-data-standards/).
+We've modeled this repository after other GitHub-hosted resource curation efforts (e.g., [awesome lists](https://github.com/sindresorhus/awesome)).
 
-### Tools
+## Software Resource List
 
-#### Tools - Phylogenies 
+### Developer Utilities/Libraries
 
-- [alife-data-standards general phylogeny tools pack](https://github.com/alife-data-standards/tools-pack-phylogeny)
+Development utilities are provided for those who wish to create new tools that take
+advantage of the ALife data standards. These utilities provide functionality such
+as loading/saving standard-compliant data using various file formats, callable metric
+and verification functions, _et cetera_.
 
-#### Tools - Web
+#### Python
 
-- [**Phylogeny visualizer**](https://emilydolson.github.io/lineage_viz_tool/standards_viz.html)
-  - Description: Upload a standards-compliant csv formatted phylogeny file and this website will draw a tree based on it. If you have additional fields in your data, you can color the nodes based on them.
+- [ALife Standards Development Package](https://github.com/alife-data-standards/alife-std-dev-python)
+  - Currently has a variety of utility functions for working with phylogenies.
 
-### Converters
+### Data Converters
 
-Data conversion tools translate data files from non-standard file formats to a
+Data converters translate data files from non-standard file formats to a
 standards-compliant file format and vice versa.
 Each converter should contain a readme that gives a high-level description (at least
 a sentence or two) of the system (_e.g._, system X does digital evolution) and, if
@@ -38,13 +45,20 @@ possible, references to a publication that describes the system. Please create a
 [issue](https://github.com/alife-data-standards/alife-data-tools/issues) for
 inadequate readmes!
 
-- [Avida](https://github.com/alife-data-standards/converters-avida)
-- [Modular Agent-based Evolver (MABE)](https://github.com/alife-data-standards/converters-mabe)
-- [Visual Inspector for NeuroEvolution (VINE)](https://github.com/alife-data-standards/converters-vine)
+- [Avida to standards converters](https://github.com/alife-data-standards/converters-avida)
+- [Modular Agent-based Evolver (MABE) to standards converters](https://github.com/alife-data-standards/converters-mabe)
+- [Phylogeny standard to Visual Inspector for NeuroEvolution (VINE)](https://github.com/alife-data-standards/converters-vine)
 
+### End-user Tools
 
-### Devlopment Utilities
+#### Data processing
 
-Development utilities are provided for those who wish to create new tools that take advantage of the ALife data standards. These utilities provide functionality such as loading/saving standard-compliant data using various file formats, callable metric and verification functions, _et cetera_. 
+- [alife-data-standards general phylogeny tools pack](https://github.com/alife-data-standards/tools-pack-phylogeny)
+  - This repository contains a set of commandline tools for analyzing phylogenies.
 
- - [Python](https://github.com/alife-data-standards/alife-std-dev-python)
+#### Visualizers
+
+- [phylogeny visualizer](https://emilydolson.github.io/lineage_viz_tool/standards_viz.html)
+  - Upload a standards-compliant csv formatted phylogeny file and this website will
+    draw a tree based on it. If you have additional fields in your data, you can
+    color the nodes based on them.
