@@ -1,5 +1,5 @@
 
-# ALife data standards tools
+# Software Resources for the Artificial Life Data Standards
 
 **Navigation**
 
@@ -20,6 +20,8 @@
 
 This repository is a curated list of software resources related to the [ALife community data standards](https://alife-data-standards.github.io/alife-data-standards/).
 We've modeled this repository after other GitHub-hosted resource curation efforts (e.g., [awesome lists](https://github.com/sindresorhus/awesome)).
+
+We advocate the use of a number of software development best practices, including continuous integration testing, code coverage tracking, and static analysis. A general guide to our approach can be found [here](./good-practices.md).
 
 ## Software Resource List
 
