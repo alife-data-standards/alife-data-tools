@@ -1,6 +1,8 @@
 
 # Software Resources for the Artificial Life Data Standards
 
+[![DOI](https://zenodo.org/badge/145138980.svg)](https://zenodo.org/badge/latestdoi/145138980)
+
 **Navigation**
 
 <!-- TOC -->
