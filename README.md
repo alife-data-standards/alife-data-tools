@@ -38,6 +38,8 @@ and verification functions, _et cetera_.
 
 - [ALife Standards Development Package](https://github.com/alife-data-standards/alife-std-dev-python)
   - Currently has a variety of utility functions for working with phylogenies.
+- [alifedata-phyloinformatics-convert](https://github.com/mmore500/alifedata-phyloinformatics-convert)
+  - Imports artificial life standard phylogeny data into DendroPy phlogenetic computing library. 
 
 ### Data Converters
 
@@ -52,6 +54,8 @@ inadequate readmes!
 - [Avida to standards converters](https://github.com/alife-data-standards/converters-avida)
 - [Modular Agent-based Evolver (MABE) to standards converters](https://github.com/alife-data-standards/converters-mabe)
 - [Phylogeny standard to Visual Inspector for NeuroEvolution (VINE)](https://github.com/alife-data-standards/converters-vine)
+- [alifedata-phyloinformatics-convert](https://github.com/mmore500/alifedata-phyloinformatics-convert)
+  - Converts artificial life standard phylogeny data to newick, nexus, nexml formats. 
 
 ### End-user Tools
 
