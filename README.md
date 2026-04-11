@@ -59,7 +59,7 @@ inadequate readmes!
 
 - [alife-data-standards general phylogeny tools pack](https://github.com/alife-data-standards/tools-pack-phylogeny)
   - This repository contains a set of commandline tools for analyzing phylogenies.
-- [phyloframe](https://github.com/mmore500/phyloframe]
+- [phyloframe](https://github.com/mmore500/phyloframe)
   - Full-featured, high-performance Python library for Dataframe-based phylogenetic computing.
 
 #### Visualizers
@@ -68,3 +68,11 @@ inadequate readmes!
   - Upload a standards-compliant csv formatted phylogeny file and this website will
     draw a tree based on it. If you have additional fields in your data, you can
     color the nodes based on them.
+- [alifestd taxonium](https://mmore500.com/taxonium)
+  - Fork of [taxonium](https://taxonium.org) with support for alife standard CSV, TSV, and Parquet files.
+    Taxonium is an in-browser tool for exploring trees, including those with millions of nodes.
+- [iplotx](https://github.com/fabilab/iplotx)
+  - Full-featured library for matplotlib-based tree visualizations, with style.
+    Supports alife standard data via [phyloframe](https://github.com/mmore500/phyloframe) integration
+    ([docs 1](https://iplotx.readthedocs.io/en/latest/gallery/tree/plot_phyloframe_tree.html),
+    [docs 2](https://phyloframe.readthedocs.io/en/latest/legacy-guides/visualization.html)).
